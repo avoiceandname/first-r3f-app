@@ -1,10 +1,12 @@
-import './style.css'
-import ReactDOM from 'react-dom/client'
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.querySelector('#root'))
+import App from "./App";
 
-root.render(
-    <>
-        Soon to be a badass R3F application
-    </>
-)
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  rootElement
+);
